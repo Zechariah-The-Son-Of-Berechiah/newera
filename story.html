@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>كرنفال زكريا - الرئيسية</title>
+    <title>كرنفال زكريا - قصة زكريا</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -25,7 +25,7 @@
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">الرئيسية</a></li>
                     <li><a href="about.html" class="nav-link">عن المسرحية</a></li>
-                    <li><a href="story.html" class="nav-link">قصة زكريا</a></li>
+                    <li><a href="story.html" class="nav-link active">قصة زكريا</a></li>
                     <li><a href="cast.html" class="nav-link">فريق العمل</a></li>
                     <li><a href="gallery.html" class="nav-link">معرض الصور</a></li>
                     <li><a href="videos.html" class="nav-link">الفيديوهات</a></li>
@@ -36,65 +36,49 @@
         </div>
     </header>
 
-    <!-- Hero Section with Countdown -->
-    <section class="hero" id="home">
+    <!-- Page Header -->
+    <section class="hero" style="height: 50vh; margin-top: 72px;">
         <div class="hero-background"></div>
         <div class="container hero-content">
-            <h1 class="hero-title">كرنفال زكريا</h1>
-            <p class="hero-subtitle">مسرحية دينية تروي قصة نبي الله زكريا عليه السلام</p>
-            
-            <!-- Countdown Timer -->
-            <div class="countdown-container">
-                <h3 class="countdown-title">الموعد القادم</h3>
-                <div class="countdown" id="countdown">
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="days">00</span>
-                        <span class="countdown-label">يوم</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="hours">00</span>
-                        <span class="countdown-label">ساعة</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="minutes">00</span>
-                        <span class="countdown-label">دقيقة</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="seconds">00</span>
-                        <span class="countdown-label">ثانية</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="hero-buttons">
-                <a href="about.html" class="btn btn-primary">تعرف على المسرحية</a>
-                <a href="schedule.html" class="btn btn-secondary">جدول العروض</a>
-            </div>
+            <h1 class="hero-title">قصة زكريا</h1>
+            <p class="hero-subtitle">من الكتاب المقدس - إنجيل لوقا</p>
         </div>
     </section>
 
-    <!-- Registration Section -->
-    <section class="section registration-section">
+    <!-- Story Section -->
+    <section class="section story-section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">التسجيل</h2>
-                <p class="section-subtitle">سجل للحصول على آخر التحديثات</p>
-            </div>
-            
-            <div class="registration-form">
-                <form id="registration-form">
-                    <div class="form-group">
-                        <input type="text" id="reg-name" name="name" placeholder="الاسم الكامل" required>
+            <div class="story-content">
+                <div class="story-text">
+                    <h3>زكريا وأليصابات</h3>
+                    <p>كان زكريا كاهناً من فرقة أبيّا، وكانت امرأته أليصابات من بنات هارون. وكان كلاهما بارين أمام الله، سالكين في جميع وصايا الرب وأحكامه بلا لوم.</p>
+                    <p>ولم يكن لهما ولد، لأن أليصابات كانت عاقراً، وكان كلاهما متقدمين في أيامهما.</p>
+                    
+                    <h3>البشارة</h3>
+                    <p>فبينما كان زكريا يخدم في الهيكل، ظهر له ملاك الرب واقفاً عن يمين مذبح البخور. وقال له الملاك: "لا تخف يا زكريا، لأن طلبك قد سُمع، وامرأتك أليصابات ستلد لك ابناً وتسميه يوحنا."</p>
+                    
+                    <h3>ميلاد يوحنا المعمدان</h3>
+                    <p>وتمت أيام خدمتها، فولدت أليصابات ابناً. وسمع جيرانها وأقرباؤها أن الرب قد عظم رحمته معها، ففرحوا معها.</p>
+                    
+                    <h3>تسمية الطفل</h3>
+                    <p>وفي اليوم الثامن جاءوا ليختنوا الصبي، وسموه باسم أبيه زكريا. فأجابت أمه وقالت: "لا! بل يُسمى يوحنا." فقالوا لها: "ليس أحد في عشيرتك تسمى بهذا الاسم."</p>
+                    <p>فأشاروا إلى أبيه ماذا يريد أن يُسمى. فطلب لوحاً وكتب قائلاً: "اسمه يوحنا." فتعجب الجميع. وفي الحال انفتح فمه ولسانه وتكلم وبارك الله.</p>
+                </div>
+                
+                <div class="story-verses">
+                    <div class="verse-card">
+                        <h4>لوقا 1:13-14</h4>
+                        <p>"فقال له الملاك: لا تخف يا زكريا، لأن طلبك قد سُمع، وامرأتك أليصابات ستلد لك ابناً وتسميه يوحنا. ويكون لك فرح وابتهاج، وكثيرون سيفرحون بولادته."</p>
                     </div>
-                    <div class="form-group">
-                        <input type="email" id="reg-email" name="email" placeholder="البريد الإلكتروني" required>
+                    <div class="verse-card">
+                        <h4>لوقا 1:37</h4>
+                        <p>"لأنه لا شيء مستحيل عند الله."</p>
                     </div>
-                    <div class="form-group">
-                        <input type="tel" id="reg-phone" name="phone" placeholder="رقم الهاتف">
+                    <div class="verse-card">
+                        <h4>لوقا 1:68</h4>
+                        <p>"مبارك الرب إله إسرائيل لأنه افتقد وصنع فداء لشعبه."</p>
                     </div>
-                    <button type="submit" class="btn btn-primary">تسجيل</button>
-                </form>
-                <p class="form-note">سيتم إضافة وظائف التسجيل قريباً</p>
+                </div>
             </div>
         </div>
     </section>
@@ -189,7 +173,7 @@
         </div>
     </section>
 
-     <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -235,8 +219,6 @@
         </div>
     </footer>
 
-     <script src="js/main.js"></script>
-     <script src="js/countdown.js"></script>
-     <script src="js/gallery.js"></script>
- </body>
- </html>
+    <script src="js/main.js"></script>
+</body>
+</html>

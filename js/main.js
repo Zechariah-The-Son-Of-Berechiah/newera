@@ -28,28 +28,25 @@ function initNavigation() {
         }
     });
     
-    // Active navigation link highlighting
-    const sections = document.querySelectorAll('section[id]');
+    // Set active navigation link based on current page
+    setActiveNavLink();
+}
+
+// Set active navigation link based on current page URL
+function setActiveNavLink() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     
-    window.addEventListener('scroll', function() {
-        let current = '';
-        const scrollY = window.pageYOffset;
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        const linkHref = link.getAttribute('href');
         
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 100;
-            const sectionHeight = section.offsetHeight;
-            
-            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-                current = section.getAttribute('id');
-            }
-        });
-        
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
-            }
-        });
+        // Check if this link matches the current page
+        if (linkHref === currentPage || 
+            (currentPage === '' && linkHref === 'index.html') ||
+            (currentPage === 'index.html' && linkHref === 'index.html')) {
+            link.classList.add('active');
+        }
     });
 }
 

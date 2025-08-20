@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>كرنفال زكريا - الرئيسية</title>
+    <title>كرنفال زكريا - الفيديوهات</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -28,7 +28,7 @@
                     <li><a href="story.html" class="nav-link">قصة زكريا</a></li>
                     <li><a href="cast.html" class="nav-link">فريق العمل</a></li>
                     <li><a href="gallery.html" class="nav-link">معرض الصور</a></li>
-                    <li><a href="videos.html" class="nav-link">الفيديوهات</a></li>
+                    <li><a href="videos.html" class="nav-link active">الفيديوهات</a></li>
                     <li><a href="schedule.html" class="nav-link">جدول العروض</a></li>
                     <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
                 </ul>
@@ -36,65 +36,66 @@
         </div>
     </header>
 
-    <!-- Hero Section with Countdown -->
-    <section class="hero" id="home">
+    <!-- Page Header -->
+    <section class="hero" style="height: 50vh; margin-top: 72px;">
         <div class="hero-background"></div>
         <div class="container hero-content">
-            <h1 class="hero-title">كرنفال زكريا</h1>
-            <p class="hero-subtitle">مسرحية دينية تروي قصة نبي الله زكريا عليه السلام</p>
-            
-            <!-- Countdown Timer -->
-            <div class="countdown-container">
-                <h3 class="countdown-title">الموعد القادم</h3>
-                <div class="countdown" id="countdown">
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="days">00</span>
-                        <span class="countdown-label">يوم</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="hours">00</span>
-                        <span class="countdown-label">ساعة</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="minutes">00</span>
-                        <span class="countdown-label">دقيقة</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="seconds">00</span>
-                        <span class="countdown-label">ثانية</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="hero-buttons">
-                <a href="about.html" class="btn btn-primary">تعرف على المسرحية</a>
-                <a href="schedule.html" class="btn btn-secondary">جدول العروض</a>
-            </div>
+            <h1 class="hero-title">الفيديوهات</h1>
+            <p class="hero-subtitle">مقاطع من البروفات والعروض</p>
         </div>
     </section>
 
-    <!-- Registration Section -->
-    <section class="section registration-section">
+    <!-- Videos Section -->
+    <section class="section videos-section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">التسجيل</h2>
-                <p class="section-subtitle">سجل للحصول على آخر التحديثات</p>
-            </div>
-            
-            <div class="registration-form">
-                <form id="registration-form">
-                    <div class="form-group">
-                        <input type="text" id="reg-name" name="name" placeholder="الاسم الكامل" required>
+            <div class="videos-grid">
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                     </div>
-                    <div class="form-group">
-                        <input type="email" id="reg-email" name="email" placeholder="البريد الإلكتروني" required>
+                    <h3>مشهد البشارة - بروفة</h3>
+                    <p>لقطات من بروفة مشهد ظهور الملاك لزكريا</p>
+                </div>
+                
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                     </div>
-                    <div class="form-group">
-                        <input type="tel" id="reg-phone" name="phone" placeholder="رقم الهاتف">
+                    <h3>خلف الكواليس</h3>
+                    <p>لقطات من وراء الكواليس أثناء التحضير</p>
+                </div>
+                
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                     </div>
-                    <button type="submit" class="btn btn-primary">تسجيل</button>
-                </form>
-                <p class="form-note">سيتم إضافة وظائف التسجيل قريباً</p>
+                    <h3>مقابلة مع الكاتب</h3>
+                    <p>حديث مع إبرام إسحاق عن فكرة المسرحية</p>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <h3>تدريبات الكورال</h3>
+                    <p>الفريق الموسيقي يتدرب على الترانيم</p>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <h3>مشهد ميلاد يوحنا</h3>
+                    <p>من العرض الرسمي - لحظة الفرح والاحتفال</p>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <h3>شهادات الجمهور</h3>
+                    <p>آراء الحضور بعد مشاهدة المسرحية</p>
+                </div>
             </div>
         </div>
     </section>
@@ -189,7 +190,7 @@
         </div>
     </section>
 
-     <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -235,8 +236,6 @@
         </div>
     </footer>
 
-     <script src="js/main.js"></script>
-     <script src="js/countdown.js"></script>
-     <script src="js/gallery.js"></script>
- </body>
- </html>
+    <script src="js/main.js"></script>
+</body>
+</html>

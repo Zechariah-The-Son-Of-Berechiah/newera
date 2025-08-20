@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>كرنفال زكريا - الرئيسية</title>
+    <title>كرنفال زكريا - تواصل معنا</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -30,109 +30,24 @@
                     <li><a href="gallery.html" class="nav-link">معرض الصور</a></li>
                     <li><a href="videos.html" class="nav-link">الفيديوهات</a></li>
                     <li><a href="schedule.html" class="nav-link">جدول العروض</a></li>
-                    <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+                    <li><a href="contact.html" class="nav-link active">تواصل معنا</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section with Countdown -->
-    <section class="hero" id="home">
+    <!-- Page Header -->
+    <section class="hero" style="height: 50vh; margin-top: 72px;">
         <div class="hero-background"></div>
         <div class="container hero-content">
-            <h1 class="hero-title">كرنفال زكريا</h1>
-            <p class="hero-subtitle">مسرحية دينية تروي قصة نبي الله زكريا عليه السلام</p>
-            
-            <!-- Countdown Timer -->
-            <div class="countdown-container">
-                <h3 class="countdown-title">الموعد القادم</h3>
-                <div class="countdown" id="countdown">
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="days">00</span>
-                        <span class="countdown-label">يوم</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="hours">00</span>
-                        <span class="countdown-label">ساعة</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="minutes">00</span>
-                        <span class="countdown-label">دقيقة</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="seconds">00</span>
-                        <span class="countdown-label">ثانية</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="hero-buttons">
-                <a href="about.html" class="btn btn-primary">تعرف على المسرحية</a>
-                <a href="schedule.html" class="btn btn-secondary">جدول العروض</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Registration Section -->
-    <section class="section registration-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">التسجيل</h2>
-                <p class="section-subtitle">سجل للحصول على آخر التحديثات</p>
-            </div>
-            
-            <div class="registration-form">
-                <form id="registration-form">
-                    <div class="form-group">
-                        <input type="text" id="reg-name" name="name" placeholder="الاسم الكامل" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="reg-email" name="email" placeholder="البريد الإلكتروني" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" id="reg-phone" name="phone" placeholder="رقم الهاتف">
-                    </div>
-                    <button type="submit" class="btn btn-primary">تسجيل</button>
-                </form>
-                <p class="form-note">سيتم إضافة وظائف التسجيل قريباً</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Play Section -->
-    <section class="section about-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">عن المسرحية</h2>
-                <p class="section-subtitle">قصة إيمانية مؤثرة من الكتاب المقدس</p>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>كرنفال زكريا</h3>
-                    <p>talk talk</p>
-                    <p>talk talk </p>
-                    <div class="bible-verse">
-                        <blockquote>
-                            "لأنه لا شيء مستحيل عند الله" - لوقا 1:37
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="zakria.png" alt="صورة من المسرحية">
-                </div>
-            </div>
+            <h1 class="hero-title">تواصل معنا</h1>
+            <p class="hero-subtitle">للاستفسارات وحجز التذاكر</p>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section class="section contact-section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">تواصل معنا</h2>
-                <p class="section-subtitle">للاستفسارات وحجز التذاكر</p>
-            </div>
-            
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
@@ -166,15 +81,45 @@
                             <p>السبت - الخميس: 9:00 صباحاً - 5:00 مساءً</p>
                         </div>
                     </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-ticket-alt"></i>
+                        <div>
+                            <h3>حجز التذاكر</h3>
+                            <p>الدخول مجاني - يرجى الحجز المسبق</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-church"></i>
+                        <div>
+                            <h3>موقع العروض</h3>
+                            <p>مسرح الكنيسة - القاهرة</p>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="contact-form">
+                    <h3>أرسل لنا رسالة</h3>
                     <form id="contact-form">
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="الاسم الكامل" required>
                         </div>
                         <div class="form-group">
                             <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="رقم الهاتف">
+                        </div>
+                        <div class="form-group">
+                            <select id="inquiry-type" name="inquiry-type" required>
+                                <option value="">نوع الاستفسار</option>
+                                <option value="booking">حجز تذاكر</option>
+                                <option value="general">استفسار عام</option>
+                                <option value="media">استفسار إعلامي</option>
+                                <option value="volunteer">التطوع</option>
+                                <option value="other">أخرى</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <input type="text" id="subject" name="subject" placeholder="الموضوع" required>
@@ -189,7 +134,82 @@
         </div>
     </section>
 
-     <!-- Footer -->
+    <!-- Map Section -->
+    <section class="section" style="padding: 40px 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">موقعنا</h2>
+                <p class="section-subtitle">مسرح الكنيسة - القاهرة</p>
+            </div>
+            <div style="background: #f5f5f5; height: 300px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #666;">
+                <div style="text-align: center;">
+                    <i class="fas fa-map-marker-alt" style="font-size: 48px; color: var(--accent); margin-bottom: 20px;"></i>
+                    <p>خريطة الموقع ستظهر هنا</p>
+                    <p>القاهرة، مصر</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: #f9f9f9;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">الأسئلة الشائعة</h2>
+                <p class="section-subtitle">إجابات على أكثر الأسئلة شيوعاً</p>
+            </div>
+            
+            <div class="faq-container" style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item" style="margin-bottom: 20px; background: white; border-radius: 10px; padding: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <h3 style="color: var(--accent); margin-bottom: 10px;">كيف يمكنني حجز تذكرة؟</h3>
+                    <p>يمكنك حجز التذاكر عبر الهاتف أو البريد الإلكتروني أو زيارة الكنيسة مباشرة. الدخول مجاني ولكن يُفضل الحجز المسبق لضمان المقعد.</p>
+                </div>
+                
+                <div class="faq-item" style="margin-bottom: 20px; background: white; border-radius: 10px; padding: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <h3 style="color: var(--accent); margin-bottom: 10px;">ما هي مدة العرض؟</h3>
+                    <p>مدة العرض حوالي ساعة ونصف مع استراحة قصيرة في المنتصف.</p>
+                </div>
+                
+                <div class="faq-item" style="margin-bottom: 20px; background: white; border-radius: 10px; padding: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <h3 style="color: var(--accent); margin-bottom: 10px;">هل العرض مناسب للأطفال؟</h3>
+                    <p>نعم، العرض مناسب لجميع الأعمار ويحمل رسالة تربوية وروحية جميلة.</p>
+                </div>
+                
+                <div class="faq-item" style="margin-bottom: 20px; background: white; border-radius: 10px; padding: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <h3 style="color: var(--accent); margin-bottom: 10px;">هل يمكنني إلغاء الحجز؟</h3>
+                    <p>نعم، يمكنك إلغاء الحجز قبل 24 ساعة من موعد العرض عبر الاتصال بنا.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Play Section -->
+    <section class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">عن المسرحية</h2>
+                <p class="section-subtitle">قصة إيمانية مؤثرة من الكتاب المقدس</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>كرنفال زكريا</h3>
+                    <p>talk talk</p>
+                    <p>talk talk </p>
+                    <div class="bible-verse">
+                        <blockquote>
+                            "لأنه لا شيء مستحيل عند الله" - لوقا 1:37
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="zakria.png" alt="صورة من المسرحية">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -235,8 +255,6 @@
         </div>
     </footer>
 
-     <script src="js/main.js"></script>
-     <script src="js/countdown.js"></script>
-     <script src="js/gallery.js"></script>
- </body>
- </html>
+    <script src="js/main.js"></script>
+</body>
+</html>

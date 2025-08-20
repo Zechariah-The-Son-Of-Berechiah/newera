@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>كرنفال زكريا - الرئيسية</title>
+    <title>كرنفال زكريا - جدول العروض</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -29,72 +29,140 @@
                     <li><a href="cast.html" class="nav-link">فريق العمل</a></li>
                     <li><a href="gallery.html" class="nav-link">معرض الصور</a></li>
                     <li><a href="videos.html" class="nav-link">الفيديوهات</a></li>
-                    <li><a href="schedule.html" class="nav-link">جدول العروض</a></li>
+                    <li><a href="schedule.html" class="nav-link active">جدول العروض</a></li>
                     <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section with Countdown -->
-    <section class="hero" id="home">
+    <!-- Page Header -->
+    <section class="hero" style="height: 50vh; margin-top: 72px;">
         <div class="hero-background"></div>
         <div class="container hero-content">
-            <h1 class="hero-title">كرنفال زكريا</h1>
-            <p class="hero-subtitle">مسرحية دينية تروي قصة نبي الله زكريا عليه السلام</p>
-            
-            <!-- Countdown Timer -->
-            <div class="countdown-container">
-                <h3 class="countdown-title">الموعد القادم</h3>
-                <div class="countdown" id="countdown">
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="days">00</span>
-                        <span class="countdown-label">يوم</span>
+            <h1 class="hero-title">جدول العروض</h1>
+            <p class="hero-subtitle">مواعيد العروض القادمة</p>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="section schedule-section">
+        <div class="container">
+            <div class="schedule-grid">
+                <div class="schedule-item">
+                    <div class="schedule-date">
+                        <span class="day">15</span>
+                        <span class="month">يناير</span>
                     </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="hours">00</span>
-                        <span class="countdown-label">ساعة</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="minutes">00</span>
-                        <span class="countdown-label">دقيقة</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="seconds">00</span>
-                        <span class="countdown-label">ثانية</span>
+                    <div class="schedule-info">
+                        <h3>العرض الأول</h3>
+                        <p class="schedule-time">7:00 مساءً</p>
+                        <p class="schedule-location">مسرح الكنيسة</p>
+                        <a href="contact.html" class="btn btn-small">حجز تذكرة</a>
                     </div>
                 </div>
-            </div>
-            
-            <div class="hero-buttons">
-                <a href="about.html" class="btn btn-primary">تعرف على المسرحية</a>
-                <a href="schedule.html" class="btn btn-secondary">جدول العروض</a>
+                
+                <div class="schedule-item">
+                    <div class="schedule-date">
+                        <span class="day">22</span>
+                        <span class="month">يناير</span>
+                    </div>
+                    <div class="schedule-info">
+                        <h3>العرض الثاني</h3>
+                        <p class="schedule-time">6:30 مساءً</p>
+                        <p class="schedule-location">مسرح الكنيسة</p>
+                        <a href="contact.html" class="btn btn-small">حجز تذكرة</a>
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-date">
+                        <span class="day">29</span>
+                        <span class="month">يناير</span>
+                    </div>
+                    <div class="schedule-info">
+                        <h3>العرض الثالث</h3>
+                        <p class="schedule-time">7:00 مساءً</p>
+                        <p class="schedule-location">مسرح الكنيسة</p>
+                        <a href="contact.html" class="btn btn-small">حجز تذكرة</a>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-date">
+                        <span class="day">05</span>
+                        <span class="month">فبراير</span>
+                    </div>
+                    <div class="schedule-info">
+                        <h3>العرض الرابع</h3>
+                        <p class="schedule-time">7:30 مساءً</p>
+                        <p class="schedule-location">مسرح الكنيسة</p>
+                        <a href="contact.html" class="btn btn-small">حجز تذكرة</a>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-date">
+                        <span class="day">12</span>
+                        <span class="month">فبراير</span>
+                    </div>
+                    <div class="schedule-info">
+                        <h3>العرض الخامس</h3>
+                        <p class="schedule-time">6:00 مساءً</p>
+                        <p class="schedule-location">مسرح الكنيسة</p>
+                        <a href="contact.html" class="btn btn-small">حجز تذكرة</a>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-date">
+                        <span class="day">19</span>
+                        <span class="month">فبراير</span>
+                    </div>
+                    <div class="schedule-info">
+                        <h3>العرض الأخير</h3>
+                        <p class="schedule-time">7:00 مساءً</p>
+                        <p class="schedule-location">مسرح الكنيسة</p>
+                        <a href="contact.html" class="btn btn-small">حجز تذكرة</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Registration Section -->
+    <!-- Booking Information -->
     <section class="section registration-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">التسجيل</h2>
-                <p class="section-subtitle">سجل للحصول على آخر التحديثات</p>
+                <h2 class="section-title">معلومات الحجز</h2>
+                <p class="section-subtitle">كيفية حجز التذاكر</p>
             </div>
             
-            <div class="registration-form">
-                <form id="registration-form">
-                    <div class="form-group">
-                        <input type="text" id="reg-name" name="name" placeholder="الاسم الكامل" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="reg-email" name="email" placeholder="البريد الإلكتروني" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" id="reg-phone" name="phone" placeholder="رقم الهاتف">
-                    </div>
-                    <button type="submit" class="btn btn-primary">تسجيل</button>
-                </form>
-                <p class="form-note">سيتم إضافة وظائف التسجيل قريباً</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>طرق الحجز</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 15px;"><i class="fas fa-phone" style="color: var(--accent); margin-left: 10px;"></i> الحجز الهاتفي: +20 123 456 7890</li>
+                        <li style="margin-bottom: 15px;"><i class="fas fa-envelope" style="color: var(--accent); margin-left: 10px;"></i> البريد الإلكتروني: info@zakaria-carnival.com</li>
+                        <li style="margin-bottom: 15px;"><i class="fas fa-map-marker-alt" style="color: var(--accent); margin-left: 10px;"></i> الحجز المباشر في الكنيسة</li>
+                    </ul>
+                    
+                    <h3>أسعار التذاكر</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;"><i class="fas fa-ticket-alt" style="color: var(--accent); margin-left: 10px;"></i> تذكرة عادية: مجانية</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-star" style="color: var(--accent); margin-left: 10px;"></i> مقاعد VIP: تبرع اختياري</li>
+                    </ul>
+                    
+                    <h3>ملاحظات مهمة</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;"><i class="fas fa-clock" style="color: var(--accent); margin-left: 10px;"></i> يرجى الحضور قبل 30 دقيقة من بداية العرض</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-users" style="color: var(--accent); margin-left: 10px;"></i> العدد محدود - احجز مبكراً</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-child" style="color: var(--accent); margin-left: 10px;"></i> مناسب لجميع الأعمار</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="church.jpg" alt="مسرح الكنيسة">
+                </div>
             </div>
         </div>
     </section>
@@ -189,7 +257,7 @@
         </div>
     </section>
 
-     <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -235,8 +303,6 @@
         </div>
     </footer>
 
-     <script src="js/main.js"></script>
-     <script src="js/countdown.js"></script>
-     <script src="js/gallery.js"></script>
- </body>
- </html>
+    <script src="js/main.js"></script>
+</body>
+</html>
