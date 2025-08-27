@@ -162,15 +162,11 @@ class CountdownTimer {
 // ===== COUNTDOWN INITIALIZATION =====
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Set target date to 1 month from now (easily modifiable)
-    const targetDate = new Date();
-    targetDate.setMonth(targetDate.getMonth() + 1);
-    
-    // Format: YYYY-MM-DD HH:MM:SS
-    const formattedDate = targetDate.toISOString().slice(0, 19).replace('T', ' ');
+    // Set target date to September 13, 2025 at 7 PM
+    const targetDate = new Date('2025-09-13T19:00:00');
     
     // Initialize countdown
-    const countdown = new CountdownTimer(formattedDate);
+    const countdown = new CountdownTimer(targetDate);
     
     // Make countdown globally accessible for potential admin functionality
     window.countdownTimer = countdown;

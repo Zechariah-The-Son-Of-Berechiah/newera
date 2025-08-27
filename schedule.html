@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>كرنفال زكريا - جدول العروض</title>
+    <title>كرنفال الرجاء - Operetta</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -15,8 +15,8 @@
     <header class="header">
         <div class="container header-container">
             <div class="logo">
-                <img src="church_logo.png" alt="شعار الكنيسة">
-                <div class="logo-text">كرنفال زكريا</div>
+                <img src="images/logo.png" alt="شعار الكنيسة">
+                <div class="logo-text">كرنفال الرجاء</div>
             </div>
             <button class="menu-toggle" id="menu-toggle">
                 <i class="fas fa-bars"></i>
@@ -29,7 +29,7 @@
                     <li><a href="cast.html" class="nav-link">فريق العمل</a></li>
                     <li><a href="gallery.html" class="nav-link">معرض الصور</a></li>
                     <li><a href="videos.html" class="nav-link">الفيديوهات</a></li>
-                    <li><a href="schedule.html" class="nav-link active">جدول العروض</a></li>
+                    <li><a href="schedule.html" class="nav-link active">Operetta</a></li>
                     <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
                 </ul>
             </nav>
@@ -40,229 +40,95 @@
     <section class="hero" style="height: 50vh; margin-top: 72px;">
         <div class="hero-background"></div>
         <div class="container hero-content">
-            <h1 class="hero-title">جدول العروض</h1>
-            <p class="hero-subtitle">مواعيد العروض القادمة</p>
+            <h1 class="hero-title">Operetta</h1>
+            <p class="hero-subtitle">العروض والفعاليات الموسيقية</p>
         </div>
     </section>
 
-    <!-- Schedule Section -->
-    <section class="section schedule-section">
+    <!-- Coming Soon Section -->
+    <section class="section" style="min-height: 70vh; display: flex; align-items: center;">
         <div class="container">
-            <div class="schedule-grid">
-                <div class="schedule-item">
-                    <div class="schedule-date">
-                        <span class="day">15</span>
-                        <span class="month">يناير</span>
+            <div class="coming-soon-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <div class="coming-soon-icon" style="margin-bottom: 40px;">
+                    <i class="fas fa-music" style="font-size: 120px; color: var(--accent); margin-bottom: 20px; display: block;"></i>
+                </div>
+                
+                <h1 style="font-size: 4rem; color: var(--accent); margin-bottom: 30px; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Operetta</h1>
+                
+                <div class="coming-soon-text" style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); padding: 60px 40px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); margin-bottom: 40px;">
+                    <h2 style="font-size: 3rem; color: #fff; margin-bottom: 25px; font-weight: 600;">قريباً جداً</h2>
+                    <p style="font-size: 1.4rem; color: #ccc; line-height: 1.8; margin-bottom: 30px;">نحن نعمل بجد لتقديم تجربة موسيقية استثنائية</p>
+                    <p style="font-size: 1.2rem; color: var(--accent); font-weight: 500;">ترقبوا الإعلان عن التفاصيل قريباً</p>
+                </div>
+                
+                <div class="features-preview" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 50px;">
+                    <div class="feature-card" style="background: #1a1a1a; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); border: 2px solid var(--accent); transition: transform 0.3s ease;">
+                        <i class="fas fa-theater-masks" style="font-size: 48px; color: var(--accent); margin-bottom: 20px;"></i>
+                        <h3 style="color: #fff; margin-bottom: 15px;">عروض مسرحية</h3>
+                        <p style="color: #ccc; font-size: 0.95rem;">عروض مسرحية مميزة بأحدث التقنيات</p>
                     </div>
-                    <div class="schedule-info">
-                        <h3>العرض الأول</h3>
-                        <p class="schedule-time">7:00 مساءً</p>
-                        <p class="schedule-location">مسرح الكنيسة</p>
-                        <a href="contact.html" class="btn btn-small">حجز تذكرة</a>
+                    
+                    <div class="feature-card" style="background: #1a1a1a; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); border: 2px solid var(--accent); transition: transform 0.3s ease;">
+                        <i class="fas fa-microphone" style="font-size: 48px; color: var(--accent); margin-bottom: 20px;"></i>
+                        <h3 style="color: #fff; margin-bottom: 15px;">موسيقى حية</h3>
+                        <p style="color: #ccc; font-size: 0.95rem;">أداء موسيقي مباشر وتجربة صوتية رائعة</p>
+                    </div>
+                    
+                    <div class="feature-card" style="background: #1a1a1a; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); border: 2px solid var(--accent); transition: transform 0.3s ease;">
+                        <i class="fas fa-star" style="font-size: 48px; color: var(--accent); margin-bottom: 20px;"></i>
+                        <h3 style="color: #fff; margin-bottom: 15px;">تجربة مميزة</h3>
+                        <p style="color: #ccc; font-size: 0.95rem;">حدث فني لا يُنسى للعائلة والأصدقاء</p>
                     </div>
                 </div>
                 
-                <div class="schedule-item">
-                    <div class="schedule-date">
-                        <span class="day">22</span>
-                        <span class="month">يناير</span>
-                    </div>
-                    <div class="schedule-info">
-                        <h3>العرض الثاني</h3>
-                        <p class="schedule-time">6:30 مساءً</p>
-                        <p class="schedule-location">مسرح الكنيسة</p>
-                        <a href="contact.html" class="btn btn-small">حجز تذكرة</a>
-                    </div>
-                </div>
-                
-                <div class="schedule-item">
-                    <div class="schedule-date">
-                        <span class="day">29</span>
-                        <span class="month">يناير</span>
-                    </div>
-                    <div class="schedule-info">
-                        <h3>العرض الثالث</h3>
-                        <p class="schedule-time">7:00 مساءً</p>
-                        <p class="schedule-location">مسرح الكنيسة</p>
-                        <a href="contact.html" class="btn btn-small">حجز تذكرة</a>
-                    </div>
-                </div>
-
-                <div class="schedule-item">
-                    <div class="schedule-date">
-                        <span class="day">05</span>
-                        <span class="month">فبراير</span>
-                    </div>
-                    <div class="schedule-info">
-                        <h3>العرض الرابع</h3>
-                        <p class="schedule-time">7:30 مساءً</p>
-                        <p class="schedule-location">مسرح الكنيسة</p>
-                        <a href="contact.html" class="btn btn-small">حجز تذكرة</a>
-                    </div>
-                </div>
-
-                <div class="schedule-item">
-                    <div class="schedule-date">
-                        <span class="day">12</span>
-                        <span class="month">فبراير</span>
-                    </div>
-                    <div class="schedule-info">
-                        <h3>العرض الخامس</h3>
-                        <p class="schedule-time">6:00 مساءً</p>
-                        <p class="schedule-location">مسرح الكنيسة</p>
-                        <a href="contact.html" class="btn btn-small">حجز تذكرة</a>
-                    </div>
-                </div>
-
-                <div class="schedule-item">
-                    <div class="schedule-date">
-                        <span class="day">19</span>
-                        <span class="month">فبراير</span>
-                    </div>
-                    <div class="schedule-info">
-                        <h3>العرض الأخير</h3>
-                        <p class="schedule-time">7:00 مساءً</p>
-                        <p class="schedule-location">مسرح الكنيسة</p>
-                        <a href="contact.html" class="btn btn-small">حجز تذكرة</a>
-                    </div>
+                <div class="contact-cta" style="margin-top: 60px; padding: 40px; background: rgba(255, 193, 7, 0.1); border-radius: 15px; border: 1px solid var(--accent);">
+                    <h3 style="color: var(--accent); margin-bottom: 20px; font-size: 1.5rem;">للاستفسار والمتابعة</h3>
+                    <p style="color: #ccc; margin-bottom: 25px;">تواصل معنا للحصول على آخر التحديثات</p>
+                    <a href="contact.html" style="display: inline-block; background: var(--accent); color: #000; padding: 15px 35px; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);">
+                        <i class="fas fa-phone" style="margin-left: 10px;"></i>
+                        تواصل معنا
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Booking Information -->
-    <section class="section registration-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">معلومات الحجز</h2>
-                <p class="section-subtitle">كيفية حجز التذاكر</p>
-            </div>
+    
+    <style>
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .contact-cta a:hover {
+            background: #e6ac00;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 193, 7, 0.6);
+        }
+        
+        @media (max-width: 768px) {
+            .coming-soon-content h1 {
+                font-size: 2.5rem !important;
+            }
             
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>طرق الحجز</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 15px;"><i class="fas fa-phone" style="color: var(--accent); margin-left: 10px;"></i> الحجز الهاتفي: +20 123 456 7890</li>
-                        <li style="margin-bottom: 15px;"><i class="fas fa-envelope" style="color: var(--accent); margin-left: 10px;"></i> البريد الإلكتروني: info@zakaria-carnival.com</li>
-                        <li style="margin-bottom: 15px;"><i class="fas fa-map-marker-alt" style="color: var(--accent); margin-left: 10px;"></i> الحجز المباشر في الكنيسة</li>
-                    </ul>
-                    
-                    <h3>أسعار التذاكر</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 10px;"><i class="fas fa-ticket-alt" style="color: var(--accent); margin-left: 10px;"></i> تذكرة عادية: مجانية</li>
-                        <li style="margin-bottom: 10px;"><i class="fas fa-star" style="color: var(--accent); margin-left: 10px;"></i> مقاعد VIP: تبرع اختياري</li>
-                    </ul>
-                    
-                    <h3>ملاحظات مهمة</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 10px;"><i class="fas fa-clock" style="color: var(--accent); margin-left: 10px;"></i> يرجى الحضور قبل 30 دقيقة من بداية العرض</li>
-                        <li style="margin-bottom: 10px;"><i class="fas fa-users" style="color: var(--accent); margin-left: 10px;"></i> العدد محدود - احجز مبكراً</li>
-                        <li style="margin-bottom: 10px;"><i class="fas fa-child" style="color: var(--accent); margin-left: 10px;"></i> مناسب لجميع الأعمار</li>
-                    </ul>
-                </div>
-                <div class="about-image">
-                    <img src="church.jpg" alt="مسرح الكنيسة">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Play Section -->
-    <section class="section about-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">عن المسرحية</h2>
-                <p class="section-subtitle">قصة إيمانية مؤثرة من الكتاب المقدس</p>
-            </div>
+            .coming-soon-text h2 {
+                font-size: 2rem !important;
+            }
             
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>كرنفال زكريا</h3>
-                    <p>talk talk</p>
-                    <p>talk talk </p>
-                    <div class="bible-verse">
-                        <blockquote>
-                            "لأنه لا شيء مستحيل عند الله" - لوقا 1:37
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="zakria.png" alt="صورة من المسرحية">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section contact-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">تواصل معنا</h2>
-                <p class="section-subtitle">للاستفسارات وحجز التذاكر</p>
-            </div>
+            .coming-soon-text {
+                padding: 40px 25px !important;
+            }
             
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>العنوان</h3>
-                            <p>القاهرة، مصر</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>الهاتف</h3>
-                            <p>+20 123 456 7890</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>البريد الإلكتروني</h3>
-                            <p>info@zakaria-carnival.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h3>أوقات العمل</h3>
-                            <p>السبت - الخميس: 9:00 صباحاً - 5:00 مساءً</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="الاسم الكامل" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="الموضوع" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="رسالتك" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+            .features-preview {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>كرنفال زكريا</h3>
+                    <h3>كرنفال الرجاء</h3>
                     <p>مسرحية دينية تروي قصة زكريا بأسلوب فني مؤثر</p>
                 </div>
                 
@@ -273,23 +139,23 @@
                         <li><a href="about.html">عن المسرحية</a></li>
                         <li><a href="story.html">قصة زكريا</a></li>
                         <li><a href="cast.html">فريق العمل</a></li>
-                        <li><a href="schedule.html">جدول العروض</a></li>
+                        <li><a href="schedule.html">Operetta</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h3>معلومات الاتصال</h3>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> القاهرة، مصر</li>
-                        <li><i class="fas fa-phone"></i> +20 123 456 7890</li>
-                        <li><i class="fas fa-envelope"></i> info@zakaria-carnival.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Egypt, beni suef</li>
+                        <li><i class="fas fa-phone"></i> +20 1503460229</li>
+                        <li><i class="fas fa-envelope"></i> markwaseem072@gmail.com</li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h3>تابعنا</h3>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/share/1GXaTSq8RR/"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
@@ -298,7 +164,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 كرنفال زكريا. جميع الحقوق محفوظة.</p>
+                <p>&copy; 2025 كرنفال الرجاء. جميع الحقوق محفوظة.</p>
             </div>
         </div>
     </footer>

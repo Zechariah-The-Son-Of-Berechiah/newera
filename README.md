@@ -1,57 +1,63 @@
-# كرنفال زكريا - Carnival of Zacharias
+# كرنفال الرجاء - New Era Play
 
-A modern, responsive website for the "Carnival of Zacharias" play, built with HTML5, CSS3, and JavaScript.
+A modern, responsive website for the "New Era" theatrical play, built with HTML5, CSS3, and JavaScript.
 
 ## 🎭 About the Project
 
-This website showcases a religious play about the story of Zacharias from the Bible. The site features:
+This website showcases a religious theatrical play featuring the story of Zacharias from the Bible. The site features:
 
-- **Responsive Design**: Optimized for all devices, especially mobile
-- **Modern UI/UX**: Clean, professional design with smooth animations
-- **Interactive Elements**: Gallery filtering, countdown timer, smooth scrolling
-- **Accessibility**: Built with accessibility best practices
+- **Responsive Design**: Optimized for all devices with mobile-first approach
+- **Modern UI/UX**: Dark theme with golden accents and smooth animations
+- **Interactive Elements**: Gallery filtering, countdown timer, hover effects
+- **Multi-page Architecture**: Dedicated pages for different content sections
 - **Performance**: Optimized for fast loading and smooth interactions
 
 ## 🚀 Features
 
-- **Hero Section**: Eye-catching landing with countdown timer
-- **About Section**: Information about the play
-- **Story Section**: Biblical story of Zacharias
-- **Cast & Crew**: Team member profiles
-- **Gallery**: Photo gallery with filtering
-- **Videos**: YouTube video integration
-- **Schedule**: Performance dates and times
-- **Contact**: Contact information and form
-- **Registration**: Placeholder for future registration system
+- **Home Page**: Hero section with countdown timer and play introduction
+- **About Page**: Detailed information about the play and its significance
+- **Story Page**: Biblical narrative of Zacharias with rich storytelling
+- **Cast & Crew**: Professional profiles with photos and glow effects
+- **Gallery**: Interactive photo gallery with filtering capabilities
+- **Videos**: Embedded video content and trailers
+- **Schedule**: Performance dates, times, and venue information
+- **Contact**: Contact form and church information
 
 ## 🛠️ Technologies Used
 
-- **HTML5**: Semantic markup
-- **CSS3**: Modern styling with CSS Grid and Flexbox
-- **JavaScript**: Interactive functionality
-- **Font Awesome**: Icons
-- **Google Fonts**: Typography (Tajawal)
+- **HTML5**: Semantic markup with proper structure
+- **CSS3**: Modern styling with CSS Grid, Flexbox, and custom properties
+- **JavaScript**: Interactive functionality and DOM manipulation
+- **Font Awesome**: Professional icon library
+- **Google Fonts**: Arabic typography (Tajawal font family)
 
 ## 📱 Responsive Design
 
 The website is fully responsive and optimized for:
 - Desktop (1200px+)
-- Tablet (768px - 1199px)
+- Tablet (768px - 1199px) 
 - Mobile (320px - 767px)
 - Small Mobile (320px - 375px)
 
 ## 🎨 Design Features
 
-- **Dark Theme**: Professional dark blue and white color scheme
-- **Smooth Animations**: CSS keyframe animations and transitions
-- **Modern Cards**: Clean card-based layout
-- **Interactive Elements**: Hover effects and micro-interactions
-- **Accessibility**: Keyboard navigation and screen reader support
+- **Dark Theme**: Professional dark background with golden accent (#FFC107)
+- **Glow Effects**: Interactive hover effects on cast member cards
+- **Smooth Animations**: CSS transitions and transform effects
+- **Modern Cards**: Clean card-based layout with consistent spacing
+- **Arabic Support**: Right-to-left text support and Arabic typography
 
 ## 📁 Project Structure
 
 ```
-├── index.html          # Main HTML file
+├── index.html          # Home page
+├── about.html          # About the play
+├── story.html          # Zacharias story
+├── cast.html           # Cast and crew profiles
+├── gallery.html        # Photo gallery
+├── videos.html         # Video content
+├── schedule.html       # Performance schedule
+├── contact.html        # Contact information
 ├── css/
 │   ├── main.css        # Global styles and layout
 │   ├── components.css  # Component-specific styles
@@ -60,7 +66,13 @@ The website is fully responsive and optimized for:
 │   ├── main.js         # Core functionality
 │   ├── countdown.js    # Countdown timer logic
 │   └── gallery.js      # Gallery filtering and lightbox
-├── images/             # Image assets
+├── images/
+│   ├── cast and crew/  # Team member photos
+│   └── ...            # Other image assets
+├── shared/
+│   ├── header.html     # Shared header component
+│   ├── footer.html     # Shared footer component
+│   └── about-contact.html # Shared content sections
 ├── requirements.txt    # Feature specifications
 └── README.md          # This file
 ```
@@ -100,10 +112,11 @@ This website can be deployed to:
 Edit CSS variables in `css/main.css`:
 ```css
 :root {
-    --primary: #1a1a2e;
-    --secondary: #16213e;
-    --accent: #e94560;
-    /* ... */
+    --primary: #0f0f0f;
+    --secondary: #1a1a1a;
+    --accent: #FFC107;
+    --text: #ffffff;
+    --text-secondary: #cccccc;
 }
 ```
 
@@ -131,8 +144,32 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-For questions or support, please contact the development team.
+**Church Information:**
+- **Location**: Egypt, Beni Suef
+- **Phone**: +20 1503460229
+- **Email**: markwaseem072@gmail.com
+- **Facebook**: [كرنفال الرجاء](https://www.facebook.com/share/1GXaTSq8RR/)
+
+**Development Team:**
+- **Project Manager**: Mark Wassem
+- **Director**: Arsania Habib
+- **Writer/Director**: Ebram Isaac
+- **Spiritual Supervisor**: Peter Sami
+
+## 🎭 Cast & Crew
+
+**Crew Members:**
+- Ebram Isaac (Writer/Director)
+- Peter Sami (Spiritual Supervisor) 
+- Mark Wassem (Project Manager)
+- Arsania Habib (Director)
+
+**Actors:**
+- Merola Adel
+- Philopatier Nabil
+- Sara Peter
+- Yousef Botors
 
 ---
 
-**Note**: This website is designed for a religious play and contains biblical content. Please ensure all content aligns with your organization's values and beliefs. 
+**Note**: This website is designed for a religious theatrical play featuring the biblical story of Zacharias. All content aligns with Christian values and biblical teachings. 
