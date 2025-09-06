@@ -23,6 +23,53 @@
     position: relative;
 }
 
+/* Quick Links Section */
+.quick-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--header-bg);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-medium);
+    display: none;
+    min-width: 200px;
+}
+
+.quick-links h3 {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    text-align: right;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links li {
+    margin: 0.5rem 0;
+}
+
+.quick-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: var(--transition);
+    display: block;
+    padding: 0.3rem 0;
+}
+
+.quick-links a:hover {
+    color: var(--accent);
+}
+
+.nav:hover .quick-links {
+    display: block;
+}
+
+
 .logo {
     display: flex;
     align-items: center;
