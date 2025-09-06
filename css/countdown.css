@@ -1,0 +1,128 @@
+/* Countdown Timer Styles */
+.countdown {
+    --item-size: 120px;
+    --gap-size: 24px;
+    
+    display: grid;
+    grid-template-columns: repeat(4, var(--item-size));
+    gap: var(--gap-size);
+    justify-content: center;
+    margin: 3rem auto;
+    padding: 1rem;
+    
+    /* Make sure the component stays in view */
+    position: relative;
+    z-index: 1;
+    
+    /* Prevent overlapping with other elements */
+    isolation: isolate;
+}
+
+.countdown-item {
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    /* Prevent text selection */
+    user-select: none;
+    
+    /* Make sure items don't shrink */
+    flex-shrink: 0;
+    
+    /* Smooth transitions */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.countdown-number {
+    font-size: calc(var(--item-size) * 0.4);
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+    margin: 0;
+    
+    /* Prevent number from wrapping */
+    white-space: nowrap;
+}
+
+.countdown-label {
+    font-size: calc(var(--item-size) * 0.2);
+    color: var(--text-secondary);
+    margin-top: 0.3rem;
+    line-height: 1;
+    
+    /* Prevent text from wrapping */
+    white-space: nowrap;
+}
+
+/* Desktop adjustments for larger screens */
+@media (min-width: 1200px) {
+    .countdown {
+        --item-size: 140px;
+        --gap-size: 32px;
+    }
+}
+
+/* Tablet adjustments */
+@media (max-width: 768px) {
+    .countdown {
+        --item-size: 80px;
+        --gap-size: 16px;
+        margin: 2rem -0.5rem;
+        padding: 1rem 2rem;
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+    .countdown {
+        --item-size: 70px;
+        --gap-size: 12px;
+        margin: 2rem auto;
+        padding: 1rem;
+        width: calc(100% - 2rem); /* Account for padding */
+    }
+
+    .countdown-number {
+        font-size: calc(var(--item-size) * 0.45); /* Slightly larger numbers on mobile */
+    }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 360px) {
+    .countdown {
+        --item-size: 60px;
+        --gap-size: 10px;
+        grid-template-columns: repeat(4, var(--item-size));
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        margin: 1.5rem auto;
+        padding: 0.5rem 1rem;
+        
+        /* Hide scrollbar but keep functionality */
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    
+    .countdown::-webkit-scrollbar {
+        display: none;
+    }
+
+    .countdown-item {
+        border-radius: 8px; /* Slightly smaller radius for smaller items */
+    }
+}
+
+/* Hover effects for non-touch devices */
+@media (hover: hover) {
+    .countdown-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+}

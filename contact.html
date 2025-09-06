@@ -2,12 +2,27 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
+    <meta name="color-scheme" content="light dark">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>كرنفال الرجاء - تواصل معنا</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="موقعنا - كرنفال الرجاء">
+    <meta property="og:description" content="تعرف على موقعنا في Egypt, beni suef. زورونا أو تواصلوا معنا.">
+    <meta property="og:image" content="https://maps.googleapis.com/maps/api/staticmap?center=29.059436,31.098448&zoom=15&size=600x300&maptype=roadmap&markers=color:red%7C29.059436,31.098448">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="موقعنا - كرنفال الرجاء">
+    <meta name="twitter:description" content="تعرف على موقعنا في Egypt, beni suef. زورونا أو تواصلوا معنا.">
+    <meta name="twitter:image" content="https://maps.googleapis.com/maps/api/staticmap?center=29.059436,31.098448&zoom=15&size=600x300&maptype=roadmap&markers=color:red%7C29.059436,31.098448">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
@@ -37,7 +52,7 @@
     </header>
 
     <!-- Page Header -->
-    <section class="hero" style="height: 50vh; margin-top: 72px;">
+    <section class="hero contact-hero">
         <div class="hero-background"></div>
         <div class="container hero-content">
             <h1 class="hero-title">تواصل معنا</h1>
@@ -48,9 +63,9 @@
     <!-- Contact Section -->
     <section class="section contact-section">
         <div class="container">
-            <div class="contact-content" style="display: flex; justify-content: center; align-items: center;">
-                <div class="contact-info" style="max-width: 600px; margin: 0 auto; text-align: center;">
-                    <div class="contact-item">
+            <div class="contact-content">
+                <div class="contact-info" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <div class="contact-item card">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h3>العنوان</h3>
@@ -58,22 +73,19 @@
                         </div>
                     </div>
                     
-                    <div class="contact-item">
+                    <div class="contact-item card">
                         <i class="fas fa-phone"></i>
                         <div>
                             <h3>الهاتف</h3>
                             <p>+20 1503460229</p>
-                            <a href="https://wa.me/201503460229?text=مرحباً، أريد حجز تذكرة لمسرحية كرنفال الرجاء" 
-                               target="_blank" 
-                               class="whatsapp-btn" 
-                               style="display: inline-block; background: #25D366; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; margin-top: 10px; font-weight: 500; transition: all 0.3s ease;">
-                                <i class="fab fa-whatsapp" style="margin-left: 8px; color: white;"></i>
+                            <button class="whatsapp-btn" onclick="window.open('https://wa.me/201503460229?text=مرحباً، أريد حجز تذكرة لمسرحية كرنفال الرجاء','_blank')">
+                                <i class="fab fa-whatsapp"></i>
                                 تواصل عبر واتساب
-                            </a>
+                            </button>
                         </div>
                     </div>
                     
-                    <div class="contact-item">
+                    <div class="contact-item card">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h3>البريد الإلكتروني</h3>
@@ -81,23 +93,21 @@
                         </div>
                     </div>
                     
-
-                    <div class="contact-item">
+                    <div class="contact-item card">
                         <i class="fas fa-ticket-alt"></i>
                         <div>
                             <h3>حجز التذاكر</h3>
                             <p>الدخول مجاني - يرجى الحجز المسبق</p>
                             <a href="https://wa.me/201503460229?text=مرحباً، أريد حجز تذكرة لمسرحية كرنفال الرجاء. متى المواعيد المتاحة؟" 
                                target="_blank" 
-                               class="book-ticket-btn" 
-                               style="display: inline-block; background: var(--accent); color: white; padding: 12px 25px; border-radius: 25px; text-decoration: none; margin-top: 15px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);">
-                                <i class="fas fa-ticket-alt" style="margin-left: 8px;"></i>
+                               class="book-ticket-btn">
+                                <i class="fas fa-ticket-alt"></i>
                                 احجز تذكرتك الآن
                             </a>
                         </div>
                     </div>
 
-                    <div class="contact-item">
+                    <div class="contact-item card">
                         <i class="fas fa-church"></i>
                         <div>
                             <h3>موقع العروض</h3>
@@ -105,23 +115,32 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
 
     <!-- Map Section -->
-    <section class="section" style="padding: 40px 0;">
+    <section id="location" class="section map-section">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">موقعنا</h2>
                 <p class="section-subtitle">Egypt, beni suef</p>
             </div>
-            <div style="background: #f5f5f5; height: 300px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #666;">
-                <div style="text-align: center;">
-                    <i class="fas fa-map-marker-alt" style="font-size: 48px; color: var(--accent); margin-bottom: 20px;"></i>
-                    <p><a href="https://maps.app.goo.gl/Hat5rrqBus6aD3zr5" target="_blank">خريطة الموقع على جوجل مابس</a></p>
-                    <p> Egypt, beni suef</p>
+            <div class="map-container card">
+                <div class="map-content">
+                    <div class="map-preview">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.9102526602487!2d31.09844797618826!3d29.059435975919778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145b1f8394050fd9%3A0x1b887c7620a69a7b!2sHope%20Church%20-%20Coptic%20Evangelical%20Church!5e0!3m2!1sen!2seg!4v1693559899809!5m2!1sen!2seg"
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="map-info text-center">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><a href="https://maps.app.goo.gl/Hat5rrqBus6aD3zr5" target="_blank" class="map-link">
+                            <span>خريطة الموقع على جوجل مابس</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a></p>
+                        <p class="map-address">Egypt, beni suef</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -135,30 +154,25 @@
                 <p class="section-subtitle">إجابات على أكثر الأسئلة شيوعاً</p>
             </div>
             
-            <div class="faq-container" style="max-width: 800px; margin: 0 auto;">
-                <div class="faq-item" style="margin-bottom: 20px; background: #1a1a1a; border-radius: 10px; padding: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.3);">
-                    <h3 style="color: var(--accent); margin-bottom: 10px;">كيف يمكنني حجز تذكرة؟</h3>
-                    <p>يمكنك حجز التذاكر عبر الهاتف أو البريد الإلكتروني أو زيارة الكنيسة مباشرة. الدخول مجاني ولكن يُفضل الحجز المسبق لضمان المقعد.</p>
-                </div>
+            <div class="faq-container">
                 
-                <div class="faq-item" style="margin-bottom: 20px; background: #1a1a1a; border-radius: 10px; padding: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.3);">
-                    <h3 style="color: var(--accent); margin-bottom: 10px;">ما هي مدة العرض؟</h3>
+                <div class="faq-item card">
+                    <h3>ما هي مدة العرض؟</h3>
                     <p>مدة العرض حوالي ساعة ونصف مع استراحة قصيرة في المنتصف.</p>
                 </div>
                 
-                <div class="faq-item" style="margin-bottom: 20px; background: #1a1a1a; border-radius: 10px; padding: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.3);">
-                    <h3 style="color: var(--accent); margin-bottom: 10px;">هل العرض مناسب للأطفال؟</h3>
+                <div class="faq-item card">
+                    <h3>هل العرض مناسب للأطفال؟</h3>
                     <p>نعم، العرض مناسب لجميع الأعمار ويحمل رسالة تربوية وروحية جميلة.</p>
                 </div>
                 
-                <div class="faq-item" style="margin-bottom: 20px; background: #1a1a1a; border-radius: 10px; padding: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.3);">
-                    <h3 style="color: var(--accent); margin-bottom: 10px;">هل يمكنني إلغاء الحجز؟</h3>
+                <div class="faq-item card">
+                    <h3>هل يمكنني إلغاء الحجز؟</h3>
                     <p>نعم، يمكنك إلغاء الحجز قبل 24 ساعة من موعد العرض عبر الاتصال بنا.</p>
                 </div>
             </div>
         </div>
     </section>
-
 
     <!-- Footer -->
     <footer class="footer">
@@ -205,44 +219,6 @@
             </div>
         </div>
     </footer>
-
-    <style>
-        .whatsapp-btn:hover {
-            background: #20b954 !important;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-        }
-        
-        .book-ticket-btn:hover {
-            background: #e6ac00 !important;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(255, 193, 7, 0.5);
-        }
-        
-        .contact-item {
-            margin-bottom: 30px !important;
-            padding: 25px;
-            background: #1a1a1a;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            transition: transform 0.3s ease;
-        }
-        
-        .contact-item:hover {
-            transform: translateY(-5px);
-        }
-        
-        .contact-item i {
-            color: var(--accent);
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-        
-        .contact-item h3 {
-            color: var(--accent);
-            margin-bottom: 10px;
-        }
-    </style>
 
     <script src="js/main.js"></script>
 </body>

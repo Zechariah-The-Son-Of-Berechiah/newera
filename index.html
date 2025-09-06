@@ -2,12 +2,16 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
+    <meta name="color-scheme" content="light dark">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>كرنفال الرجاء - الرئيسية</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/countdown.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
@@ -24,7 +28,7 @@
             <nav class="nav" id="main-nav">
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">الرئيسية</a></li>
-                    <li><a href="about.html" class="nav-link">عن المسرحية</a></li>
+                    <li><a href="about.html" class="nav-link">عن الكرنفال</a></li>
                     <li><a href="story.html" class="nav-link">قصة زكريا</a></li>
                     <li><a href="cast.html" class="nav-link">فريق العمل</a></li>
                     <li><a href="gallery.html" class="nav-link">معرض الصور</a></li>
@@ -41,32 +45,41 @@
         <div class="hero-background"></div>
         <div class="container hero-content">
             <h1 class="hero-title">كرنفال الرجاء</h1>
+            <div class="hero-description">
+                <p>
+                    بعدما رجع شعب الله إلى اورشليم مرة أخرى كان منهكا و متعبا مما حدث له في و كان الشعب ناسيا الله و لم يرجعوا إليه و كانت قد قَسَّتْ قلوبهم فاقدين الرجاء. لكن الله كثير الرحمة و جزيل التحنن لم يتركهم بل ارسل انبيائه دائما إلى شعبه مُتحننًا عليهم ، فأرسل لهم نبي الرجاء زكريا بن برخيا بن عدو مُشجعًا شعب الله إلى الرجوع إلى الله مرة أخرى
+                </p>
+                <p>
+                    و هذا ما سنراه في جميع مراحل الكرنفال في رحلة سنتعلم منها ما هو الرجاء
+                </p>
+                <div class="verse-box">
+                    <p class="verse-reference">زكريا ٩ : ١٢</p>
+                    <p class="verse-text">١٢ ارجِعوا إلَى الحِصنِ يا أسرَى الرَّجاءِ.</p>
+                </div>
+            </div>
             
             <!-- Countdown Timer -->
-            <div class="countdown-container">
-                <h3 class="countdown-title">الموعد القادم</h3>
-                <div class="countdown" id="countdown">
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="days">00</span>
-                        <span class="countdown-label">يوم</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="hours">00</span>
-                        <span class="countdown-label">ساعة</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="minutes">00</span>
-                        <span class="countdown-label">دقيقة</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="seconds">00</span>
-                        <span class="countdown-label">ثانية</span>
-                    </div>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">يوم</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">ساعة</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">دقيقة</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">ثانية</span>
                 </div>
             </div>
             
             <div class="hero-buttons">
-                <a href="about.html" class="btn btn-primary">تعرف على المسرحية</a>
+                <a href="about.html" class="btn btn-primary">تعرف على الكرنفال</a>
                 <a href="operetta.html" class="btn btn-secondary">Operetta</a>
             </div>
         </div>
@@ -77,7 +90,7 @@
     <section class="section about-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">عن المسرحية</h2>
+                <h2 class="section-title">عن الكرنفال</h2>
                 <p class="section-subtitle">مؤثرة من الكتاب المقدس</p>
             </div>
             
@@ -86,10 +99,10 @@
                     <h3>كرنفال الرجاء</h3>
                     <p>مسرحية "زكريا النبي" تأخذنا في رحلة روحية عميقة عبر حياة أحد أعظم أنبياء العهد القديم. نشهد معاً قصة الإيمان والرجاء والنبوة التي غيرت مجرى التاريخ.</p>
                     <p>من خلال الموسيقى والأداء المؤثر، نعيش لحظات الوحي الإلهي ونرى كيف استجاب زكريا لدعوة الله رغم التحديات. إنها قصة تلهمنا جميعاً للثقة في مواعيد الله.</p>
-                    <div class="bible-verse" style="transition: all 0.3s ease; padding: 20px; border-radius: 10px; margin: 20px 0;" onmouseover="this.style.boxShadow='0 0 30px rgba(255, 255, 255, 0.8)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.boxShadow='none'; this.style.transform='translateY(0)';">
-                        <blockquote style="margin: 0; font-style: italic; color: var(--accent); font-size: 1.1rem; line-height: 1.6;">
-                            "فقال له الملاك لا تخف يا زكريا لأن طلبتك قد سمعت وامرأتك أليصابات ستلد لك ابناً وتسميه يوحنا" - لوقا 1:13<br><br>
-                            "لأنه لا شيء مستحيل عند الله" - لوقا 1:37
+                    <div class="bible-verse card">
+                        <blockquote>
+                            <p class="verse-reference">زكريا ٩ : ١٢</p>
+                            <p class="verse-text">١٢ ارجِعوا إلَى الحِصنِ يا أسرَى الرَّجاءِ.</p>
                         </blockquote>
                     </div>
                 </div>
@@ -108,38 +121,34 @@
                 <p class="section-subtitle">للاستفسارات وحجز التذاكر</p>
             </div>
             
-            <div class="contact-content" style="display: flex; justify-content: center; align-items: center;">
-                <div class="contact-info" style="max-width: 600px; margin: 0 auto; text-align: center;">
-                    <div class="contact-item">
+            <div class="contact-content">
+                <div class="contact-info" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <a href="contact.html#location" class="contact-item card">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h3>العنوان</h3>
                             <p>Egypt, beni suef</p>
                         </div>
-                    </div>
-                    
-                    <div class="contact-item">
+                    </a>
+                    <div class="contact-item card">
                         <i class="fas fa-phone"></i>
                         <div>
                             <h3>الهاتف</h3>
                             <p>+20 1503460229</p>
-                            <a href="https://wa.me/201503460229?text=مرحباً، أريد حجز تذكرة لمسرحية كرنفال الرجاء" target="_blank" class="whatsapp-btn" style="display: inline-block; background: #25D366; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; margin-top: 10px; font-weight: 500; transition: all 0.3s ease;">
-                                <i class="fab fa-whatsapp" style="margin-left: 8px; color: white;"></i>
+                            <button class="whatsapp-btn" onclick="window.open('https://wa.me/201503460229?text=مرحباً، أريد حجز تذكرة لمسرحية كرنفال الرجاء','_blank')">
+                                <i class="fab fa-whatsapp"></i>
                                 تواصل عبر واتساب
-                            </a>
+                            </button>
                         </div>
                     </div>
-                    
-                    <div class="contact-item">
+                    <div class="contact-item card">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h3>البريد الإلكتروني</h3>
                             <p>markwaseem072@gmail.com</p>
                         </div>
                     </div>
-                    
                 </div>
-                
             </div>
         </div>
     </section>

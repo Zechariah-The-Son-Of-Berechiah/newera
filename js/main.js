@@ -2,31 +2,57 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all functionality
+    initTheme();
     initNavigation();
     initSmoothScrolling();
     initGalleryFilter();
     initFormHandling();
     initAnimations();
     initMobileMenu();
+    initSkipToContent();
+    initLazyLoading();
 });
+
+// ===== THEME SWITCHER =====
+function initTheme() {
+    const themeToggleButton = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+
+    function applyTheme(theme, save = true) {
+        root.setAttribute('data-theme', theme);
+        if (save) localStorage.setItem('theme', theme);
+        if (themeToggleButton) {
+            themeToggleButton.innerHTML = theme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        }
+    }
+
+    // Listen to system color scheme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        if (!localStorage.getItem('theme')) {
+            applyTheme(e.matches ? 'dark' : 'light', false);
+        }
+    });
+
+    // Check for saved theme, else use system preference
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+    applyTheme(initialTheme, false);
+
+    if (themeToggleButton) {
+        themeToggleButton.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            applyTheme(newTheme);
+        });
+    }
+}
 
 // ===== NAVIGATION FUNCTIONALITY =====
 function initNavigation() {
     const header = document.querySelector('.header');
     const navLinks = document.querySelectorAll('.nav-link');
     
-    // Header scroll effect
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 100) {
-            header.style.background = 'rgba(26, 26, 46, 0.95)';
-            header.style.backdropFilter = 'blur(10px)';
-            header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.3)';
-        } else {
-            header.style.background = 'var(--primary)';
-            header.style.backdropFilter = 'none';
-            header.style.boxShadow = 'var(--shadow)';
-        }
-    });
     
     // Set active navigation link based on current page
     setActiveNavLink();
@@ -36,18 +62,28 @@ function initNavigation() {
 function setActiveNavLink() {
     const navLinks = document.querySelectorAll('.nav-link');
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    
-    navLinks.forEach(link => {
-        link.classList.remove('active');
+
+    const currentActiveLink = document.querySelector('.nav-link.active');
+    let newActiveLink = null;
+
+    // Find the link that should be active
+    for (const link of navLinks) {
         const linkHref = link.getAttribute('href');
-        
-        // Check if this link matches the current page
-        if (linkHref === currentPage || 
-            (currentPage === '' && linkHref === 'index.html') ||
-            (currentPage === 'index.html' && linkHref === 'index.html')) {
-            link.classList.add('active');
+        if (linkHref === currentPage || (currentPage === '' && linkHref === 'index.html')) {
+            newActiveLink = link;
+            break;
         }
-    });
+    }
+
+    // Only update classes if the active link has changed
+    if (currentActiveLink !== newActiveLink) {
+        if (currentActiveLink) {
+            currentActiveLink.classList.remove('active');
+        }
+        if (newActiveLink) {
+            newActiveLink.classList.add('active');
+        }
+    }
 }
 
 // ===== SMOOTH SCROLLING =====
@@ -218,44 +254,30 @@ function showNotification(message, type = 'info') {
         </div>
     `;
     
-    // Add styles
-    notification.style.cssText = `
-        position: fixed;
-        top: 100px;
-        right: 20px;
-        background: ${type === 'success' ? '#28a745' : '#007bff'};
-        color: white;
-        padding: 15px 20px;
-        border-radius: 5px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        z-index: 10000;
-        transform: translateX(100%);
-        transition: transform 0.3s ease;
-        max-width: 300px;
-    `;
-    
     // Add to page
     document.body.appendChild(notification);
-    
+
     // Animate in
     setTimeout(() => {
-        notification.style.transform = 'translateX(0)';
+        notification.classList.add('show');
     }, 100);
-    
+
+    // Function to close the notification
+    function closeNotification() {
+        notification.classList.remove('show');
+        setTimeout(() => {
+            if (notification.parentNode) {
+                notification.remove();
+            }
+        }, 300);
+    }
+
     // Close button functionality
     const closeButton = notification.querySelector('.notification-close');
-    closeButton.addEventListener('click', () => {
-        notification.style.transform = 'translateX(100%)';
-        setTimeout(() => notification.remove(), 300);
-    });
-    
+    closeButton.addEventListener('click', closeNotification);
+
     // Auto remove after 5 seconds
-    setTimeout(() => {
-        if (notification.parentNode) {
-            notification.style.transform = 'translateX(100%)';
-            setTimeout(() => notification.remove(), 300);
-        }
-    }, 5000);
+    setTimeout(closeNotification, 5000);
 }
 
 // ===== ANIMATIONS =====
@@ -313,16 +335,11 @@ function throttle(func, limit) {
 
 // Optimize scroll events
 const optimizedScrollHandler = throttle(function() {
-    // Header scroll effect
     const header = document.querySelector('.header');
     if (window.scrollY > 100) {
-        header.style.background = 'rgba(255, 255, 255, 0.95)';
-        header.style.backdropFilter = 'blur(10px)';
-        header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+        header.classList.add('scrolled');
     } else {
-        header.style.background = 'var(--white)';
-        header.style.backdropFilter = 'none';
-        header.style.boxShadow = 'var(--shadow)';
+        header.classList.remove('scrolled');
     }
 }, 16); // ~60fps
 
@@ -345,8 +362,6 @@ function initSkipToContent() {
     document.body.insertBefore(skipLink, document.body.firstChild);
 }
 
-// Initialize skip link
-initSkipToContent();
 
 // Keyboard navigation for mobile menu
 document.addEventListener('keydown', function(e) {
@@ -379,5 +394,6 @@ function initLazyLoading() {
     images.forEach(img => imageObserver.observe(img));
 }
 
-// Initialize lazy loading
-initLazyLoading(); 
+
+
+

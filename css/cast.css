@@ -1,0 +1,147 @@
+/* Cast Page Styles */
+.cast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.cast-member {
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.cast-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px var(--shadow-color);
+}
+
+.member-image {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* Square aspect ratio */
+    overflow: hidden;
+}
+
+.member-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.cast-member:hover .member-image img {
+    transform: scale(1.05);
+}
+
+.member-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.member-info h3 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.member-role {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Organizers Section */
+.organizers-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.organizer {
+    border: 1px solid var(--accent-translucent);
+}
+
+@media (max-width: 1200px) {
+    .organizers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Featured Actors */
+.featured-actor {
+    background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-tertiary));
+    border: 1px solid var(--accent-translucent);
+    position: relative;
+}
+
+.featured-actor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--accent);
+    opacity: 0.7;
+}
+
+.featured-actor .member-info {
+    background: var(--bg-secondary);
+}
+
+.featured-actor .member-role {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+/* Empty Slots */
+.empty-slot {
+    border: 2px dashed var(--border-color);
+    background: var(--bg-primary);
+    opacity: 0.7;
+}
+
+.empty-slot .placeholder-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-secondary);
+}
+
+.empty-slot .fa-user-plus {
+    font-size: 3rem;
+    color: var(--border-color);
+}
+
+.empty-slot .member-info h3,
+.empty-slot .member-role {
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
+.empty-slot:hover {
+    transform: none;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .cast-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+}

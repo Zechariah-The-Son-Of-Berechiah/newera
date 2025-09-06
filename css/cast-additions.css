@@ -1,0 +1,43 @@
+/* Empty cast member slots */
+.cast-member.empty-slot {
+    min-height: 300px;
+    border: 2px dashed var(--accent-translucent);
+    background: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.cast-member.empty-slot .placeholder {
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.cast-member.empty-slot .placeholder i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--accent-translucent);
+}
+
+.cast-member.empty-slot:hover {
+    border-color: var(--accent);
+    background: var(--bg-tertiary);
+}
+
+.cast-member.main-role {
+    border: 2px solid var(--accent);
+    position: relative;
+}
+
+.cast-member.main-role::before {
+    content: "دور رئيسي";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--accent);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}

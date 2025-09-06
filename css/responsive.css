@@ -62,7 +62,7 @@
         top: 72px;
         left: 0;
         width: 100vw;
-        background: linear-gradient(to right, var(--primary), var(--secondary));
+        background: var(--header-bg);
         box-shadow: var(--shadow);
         display: none;
         flex-direction: column;
@@ -555,89 +555,6 @@
     }
 }
 
-/* Light Mode Support */
-@media (prefers-color-scheme: light) {
-    :root {
-        --primary: #2c3e50;
-        --secondary: #34495e;
-        --accent: #e74c3c;
-        --light: #ffffff;
-        --dark: #2c3e50;
-        --gray: #7f8c8d;
-        --gray-light: #ecf0f1;
-        --white: #ffffff;
-    }
-    
-    body {
-        background-color: var(--light);
-        color: var(--dark);
-    }
-    
-    .header {
-        background: var(--white);
-        color: var(--dark);
-        border-bottom: 1px solid var(--gray);
-    }
-    
-    .nav-link {
-        color: var(--dark);
-    }
-    
-    .hero {
-        color: var(--dark);
-    }
-    
-    .hero-background {
-        background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
-                    url('https://images.unsplash.com/photo-1585011650347-c59c5334a2fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
-    }
-    
-    .countdown-title {
-        color: var(--dark);
-    }
-    
-    .countdown-item {
-        background: var(--white);
-        border: 2px solid var(--accent);
-    }
-    
-    .countdown-label {
-        color: var(--dark);
-    }
-    
-    .about-section,
-    .cast-section,
-    .videos-section,
-    .registration-section {
-        background-color: var(--gray-light);
-    }
-    
-    .story-section,
-    .gallery-section,
-    .schedule-section,
-    .contact-section {
-        background-color: var(--white);
-    }
-    
-    .about-text p,
-    .story-text p,
-    .member-description,
-    .video-item p,
-    .schedule-location,
-    .contact-item p {
-        color: var(--gray);
-    }
-    
-    .about-text h3,
-    .story-text h3,
-    .member-info h3,
-    .video-item h3,
-    .schedule-info h3,
-    .contact-item h3 {
-        color: var(--dark);
-    }
-}
-
 /* Focus Styles for Accessibility */
 .nav-link:focus,
 .btn:focus,
@@ -654,7 +571,7 @@
     top: -40px;
     left: 6px;
     background: var(--accent);
-    color: var(--white);
+    color: var(--text-on-accent);
     padding: 8px;
     text-decoration: none;
     border-radius: var(--border-radius-small);

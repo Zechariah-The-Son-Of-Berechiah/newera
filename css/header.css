@@ -1,0 +1,158 @@
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--header-bg);
+    padding: 1rem 0;
+    z-index: 1000;
+    transition: var(--transition);
+    min-height: 72px;
+}
+
+.header.scrolled {
+    background-color: var(--header-bg-scrolled);
+    box-shadow: var(--shadow-medium);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 1001; /* Above the mobile menu */
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-small);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent);
+    background-color: var(--accent-translucent);
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001; /* Above the mobile menu */
+}
+
+/* Mobile Styles */
+@media (max-width: 991px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        top: 72px; /* Header height */
+        left: -100%;
+        width: 80%;
+        max-width: 400px;
+        height: calc(100vh - 72px); /* Viewport height minus header */
+        background-color: var(--bg-secondary);
+        transition: var(--transition);
+        box-shadow: var(--shadow-medium);
+        overflow-y: auto; /* Make menu scrollable */
+        -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
+    }
+
+    .nav.active {
+        left: 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        width: 100%;
+        background-color: var(--bg-tertiary);
+    }
+
+    /* Ensure the mobile menu is scrollable on shorter screens */
+    .nav::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .nav::-webkit-scrollbar-track {
+        background: var(--bg-secondary);
+    }
+
+    .nav::-webkit-scrollbar-thumb {
+        background: var(--accent-translucent);
+        border-radius: 3px;
+    }
+
+    .nav::-webkit-scrollbar-thumb:hover {
+        background: var(--accent);
+    }
+
+    /* Add padding to the last item to ensure it's not hidden behind any fixed elements */
+    .nav-list li:last-child {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Ensure content below header is not hidden */
+body {
+    padding-top: 72px; /* Match header height */
+}
+
+/* Handle shorter screens */
+@media (max-height: 600px) {
+    .nav {
+        height: calc(100vh - 72px);
+        top: 72px;
+    }
+}

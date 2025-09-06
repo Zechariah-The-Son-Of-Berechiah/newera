@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/cast.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
@@ -24,12 +25,12 @@
             <nav class="nav" id="main-nav">
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">الرئيسية</a></li>
-                    <li><a href="about.html" class="nav-link">عن المسرحية</a></li>
+                    <li><a href="about.html" class="nav-link">عن الكرنفال</a></li>
                     <li><a href="story.html" class="nav-link">قصة زكريا</a></li>
                     <li><a href="cast.html" class="nav-link active">فريق العمل</a></li>
                     <li><a href="gallery.html" class="nav-link">معرض الصور</a></li>
                     <li><a href="videos.html" class="nav-link">الفيديوهات</a></li>
-                    <li><a href="operetta.html" class="nav-link active">Operetta</a></li>
+                    <li><a href="operetta.html" class="nav-link">Operetta</a></li>
                     <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
                 </ul>
             </nav>
@@ -37,7 +38,7 @@
     </header>
 
     <!-- Page Header -->
-    <section class="hero" style="height: 50vh; margin-top: 72px;">
+    <section class="hero page-hero">
         <div class="hero-background"></div>
         <div class="container hero-content">
             <h1 class="hero-title">فريق العمل</h1>
@@ -45,187 +46,211 @@
         </div>
     </section>
 
-    <!-- Cast Section -->
-    <section class="section cast-section">
+    <!-- Organizers Section -->
+    <section class="section organizers-section">
         <div class="container">
-            <div class="cast-grid">
-                <div class="cast-member">
-                    <div class="member-image">
-                        <img src="images/cast and crew/Ebram_issac.jpg" alt="إبرام إسحاق">
-                    </div>
-                    <div class="member-info">
-                        <h3>Ebram issac</h3>
-                        <p class="member-role">كاتب/مخرج</p>
-                        <p class="member-description">كاتب مسرحي موهوب </p>
-                    </div>
-                </div>
-                
-                <div class="cast-member">
+            <div class="section-header">
+                <h2 class="section-title">المنظمون</h2>
+                <p class="section-subtitle">فريق الإدارة والتنظيم</p>
+            </div>
+            <div class="cast-grid organizers-grid">
+                <div class="cast-member organizer">
                     <div class="member-image">
                         <img src="images/cast and crew/Peter Sami.jpg" alt="Peter Sami">
                     </div>
                     <div class="member-info">
-                        <h3> Peter Sami</h3>
+                        <h3>Peter Sami</h3>
                         <p class="member-role">مشرف روحي</p>
-                        <p class="member-description"></p>
                     </div>
                 </div>
-                
-                <div class="cast-member">
+
+                <div class="cast-member organizer">
+                    <div class="member-image">
+                        <img src="images/cast and crew/Ebram_issac.jpg" alt="إبرام إسحاق">
+                    </div>
+                    <div class="member-info">
+                        <h3>Ebram Issac</h3>
+                        <p class="member-role">كاتب/مخرج</p>
+                    </div>
+                </div>
+
+                <div class="cast-member organizer">
                     <div class="member-image">
                         <img src="images/cast and crew/Mark_wassem.jpg" alt="مارك وسيم">
                     </div>
                     <div class="member-info">
                         <h3>Mark Wassem</h3>
                         <p class="member-role">مدير المشروع</p>
-                        <p class="member-description">lol مدير مسرحي </p>
                     </div>
                 </div>
 
-                <div class="cast-member">
-                   <div class="member-image" style="overflow: hidden;">
-                       <img src="images/cast and crew/Arsania.jpg" alt="ارسانيا حبيب" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%;">
-                   </div>
-                   <div class="member-info">
-                       <h3>Arsania habib</h3>
-                       <p class="member-role">مخرجة</p>
-                       <p class="member-description">مخرجة مؤثرة </p>
-                   </div>
-               </div>
-               
-             </div>
-        </div>
-    </section>
-
-    <!-- Section Separator -->
-    <div class="section-separator" style="padding: 40px 0; text-align: center;">
-        <div style="width: 100px; height: 2px; background: var(--accent); margin: 0 auto 20px; border-radius: 2px;"></div>
-        <h2 style="color: var(--accent); font-size: 2rem; margin-bottom: 10px; font-weight: 600;">الممثلون</h2>
-        <p style="color: #ccc; font-size: 1rem;">نجوم المسرحية الذين يجسدون الشخصيات بإبداع وإتقان</p>
-    </div>
-
-    <!-- Actors Section -->
-    <section class="section actors-section">
-        <div class="container">
-            <div class="cast-grid">
-                <!-- Actor 1 -->
-                <div class="cast-member">
+                <div class="cast-member organizer">
                     <div class="member-image">
-                        <img src="images/cast and crew/Merola adel.jpg" alt="ميرولا عادل">
+                        <img src="images/cast and crew/Arsania.jpg" alt="ارسانيا حبيب">
                     </div>
                     <div class="member-info">
-                        <h3>Merola Adel</h3>
-                        <p class="member-role">ممثلة</p>
-                        <p class="member-description"> </p>
-                    </div>
-                </div>
-
-                <!-- Actor 2 -->
-                <div class="cast-member">
-                    <div class="member-image">
-                        <img src="images/cast and crew/Philopatier Nabil.jpg" alt="فيلوباتير نبيل">
-                    </div>
-                    <div class="member-info">
-                        <h3>Philopateer nabil</h3>
-                        <p class="member-role">ممثل</p>
-                        <p class="member-description"> </p>
-                    </div>
-                </div>
-
-                <!-- Actor 3 -->
-                <div class="cast-member">
-                    <div class="member-image">
-                        <img src="images/cast and crew/Sara peter.jpg" alt="سارة بيتر">
-                    </div>
-                    <div class="member-info">
-                        <h3>Sara Peter</h3>
-                        <p class="member-role">ممثلة</p>
-                        <p class="member-description"> </p>
-                    </div>
-                </div>
-
-                <!-- Actor 4 -->
-                <div class="cast-member">
-                    <div class="member-image">
-                        <img src="images/cast and crew/Yousef_botors.jpg" alt="يوسف بطرس">
-                    </div>
-                    <div class="member-info">
-                        <h3>Yousef Botors</h3>
-                        <p class="member-role">ممثل</p>
-                        <p class="member-description"> </p>
-                    </div>
-                </div>
-
-                <!-- Actor 5 -->
-                <div class="cast-member">
-                    <div class="member-image" style="overflow: hidden;">
-                        <img src="images/cast and crew/Peter tamer.jpg" alt="بيتر تامر" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%;">
-                    </div>
-                    <div class="member-info">
-                        <h3>Peter Tamer</h3>
-                        <p class="member-role">ممثل</p>
-                        <p class="member-description"></p>
-                    </div>
-                </div>
-
-                <!-- Actor 6 -->
-                <div class="cast-member">
-                    <div class="member-image">
-                        <img src="images/cast and crew/John Ehab.jpg" alt="جون إيهاب">
-                    </div>
-                    <div class="member-info">
-                        <h3>John Ehab</h3>
-                        <p class="member-role">ممثل</p>
-                        <p class="member-description"></p>
-                    </div>
-                </div>
-
-                <!-- Actor 7 -->
-                <div class="cast-member">
-                    <div class="member-image">
-                        <img src="images/cast and crew/Michael halim.jpg" alt="مايكل حليم ">
-                    </div>
-                    <div class="member-info">
-                        <h3>Michel Halim</h3>
-                        <p class="member-role">ممثل</p>
-                        <p class="member-description"></p>
-                    </div>
-                </div>
-
-                <!-- Actor 8 -->
-                <div class="cast-member">
-                    <div class="member-image">
-                        <div class="placeholder-icon">
-                            <i class="fas fa-user"></i>
-                        </div>
-                    </div>
-                    <div class="member-info">
-                        <h3>ممثل 8</h3>
-                        <p class="member-role"></p>
-                        <p class="member-description"></p>
+                        <h3>Arsania Habib</h3>
+                        <p class="member-role">مخرجة</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Custom Glow Styles -->
-    <style>
-        .cast-member {
-            transition: all 0.3s ease;
-        }
-        
-        .cast-member:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(255, 193, 7, 0.4);
-        }
-        
-        .cast-member .placeholder-icon {
-            color: var(--accent);
-            font-size: 48px;
-            opacity: 0.7;
-        }
-    </style>
+    <!-- Cast Section -->
+    <section class="section cast-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">فريق التمثيل</h2>
+                <p class="section-subtitle">نجوم العمل</p>
+            </div>
+            <div class="cast-grid">
+                <!-- Main Actors First -->
+                <div class="cast-member featured-actor">
+                    <div class="member-image">
+                        <img src="images/cast and crew/Yousef_botors.jpg" alt="Yousef Botors">
+                    </div>
+                    <div class="member-info">
+                        <h3>Yousef Botors</h3>
+                        <p class="member-role">ممثل رئيسي</p>
+                    </div>
+                </div>
+
+                <div class="cast-member featured-actor">
+                    <div class="member-image">
+                        <img src="images/cast and crew/Merola adel.jpg" alt="Merola Adel">
+                    </div>
+                    <div class="member-info">
+                        <h3>Merola Adel</h3>
+                        <p class="member-role">ممثلة رئيسية</p>
+                    </div>
+                </div>
+
+                <div class="cast-member featured-actor">
+                    <div class="member-image">
+                        <img src="images/cast and crew/Abanoub Makram.jpg" alt="Abanoub Makram">
+                    </div>
+                    <div class="member-info">
+                        <h3>Abanoub Makram</h3>
+                        <p class="member-role">ممثل رئيسي</p>
+                    </div>
+                </div>
+
+                <div class="cast-member featured-actor">
+                    <div class="member-image">
+                        <img src="images/cast and crew/Philopatier Nabil.jpg" alt="Philopatier Nabil">
+                    </div>
+                    <div class="member-info">
+                        <h3>Philopatier Nabil</h3>
+                        <p class="member-role">ممثل رئيسي</p>
+                    </div>
+                </div>
+
+                <!-- Regular Actors -->
+                <div class="cast-member">
+                    <div class="member-image">
+                        <img src="images/cast and crew/John Ehab.jpg" alt="John Ehab">
+                    </div>
+                    <div class="member-info">
+                        <h3>John Ehab</h3>
+                        <p class="member-role">ممثل</p>
+                    </div>
+                </div>
+
+                <div class="cast-member">
+                    <div class="member-image">
+                        <img src="images/cast and crew/Makarious Waseem.jpg" alt="Makarious Waseem">
+                    </div>
+                    <div class="member-info">
+                        <h3>Makarious Waseem</h3>
+                        <p class="member-role">ممثل</p>
+                    </div>
+                </div>
+
+                <div class="cast-member">
+                    <div class="member-image">
+                        <img src="images/cast and crew/Peter tamer.jpg" alt="Peter Tamer">
+                    </div>
+                    <div class="member-info">
+                        <h3>Peter Tamer</h3>
+                        <p class="member-role">ممثل</p>
+                    </div>
+                </div>
+
+                <div class="cast-member">
+                    <div class="member-image">
+                        <img src="images/cast and crew/Sara peter.jpg" alt="Sara Peter">
+                    </div>
+                    <div class="member-info">
+                        <h3>Sara Peter</h3>
+                        <p class="member-role">ممثلة</p>
+                    </div>
+                </div>
+
+                <!-- Empty Slots for Additional Cast Members -->
+                <div class="cast-member empty-slot">
+                    <div class="member-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>عضو جديد</h3>
+                        <p class="member-role">قريباً</p>
+                    </div>
+                </div>
+
+                <div class="cast-member empty-slot">
+                    <div class="member-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>عضو جديد</h3>
+                        <p class="member-role">قريباً</p>
+                    </div>
+                </div>
+
+                <div class="cast-member empty-slot">
+                    <div class="member-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>عضو جديد</h3>
+                        <p class="member-role">قريباً</p>
+                    </div>
+                </div>
+
+                <div class="cast-member empty-slot">
+                    <div class="member-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>عضو جديد</h3>
+                        <p class="member-role">قريباً</p>
+                    </div>
+                </div>
+
+                <div class="cast-member empty-slot">
+                    <div class="member-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>عضو جديد</h3>
+                        <p class="member-role">قريباً</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 
@@ -252,7 +277,7 @@
                 <div class="footer-section">
                     <h3>معلومات الاتصال</h3>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Egypt, beni suef</li>
+                        <li><a href="contact.html#location" class="footer-link"><i class="fas fa-map-marker-alt"></i> Egypt, beni suef</a></li>
                         <li><i class="fas fa-phone"></i> +20 1503460229</li>
                         <li><i class="fas fa-envelope"></i> markwaseem072@gmail.com</li>
                     </ul>
