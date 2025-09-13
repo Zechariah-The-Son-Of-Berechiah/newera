@@ -162,8 +162,8 @@ class CountdownTimer {
 // ===== COUNTDOWN INITIALIZATION =====
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Set target date to September 13, 2025 at 7 PM
-    const targetDate = new Date('2025-09-13T19:00:00');
+    // Set target date to September 13, 2025 at 5 PM
+    const targetDate = new Date('2025-09-13T17:00:00');
     
     // Initialize countdown
     const countdown = new CountdownTimer(targetDate);

@@ -139,8 +139,25 @@
     opacity: 1;
 }
 
+/* Tech Team Grid */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+    justify-items: start;
+}
+
+/* Decor Team Grid */
+.decor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
 @media (max-width: 768px) {
-    .cast-grid {
+    .cast-grid, .tech-grid, .decor-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 1.5rem;
     }
